@@ -1,0 +1,90 @@
+{
+  "sentiment": {
+    "zero_shot": {
+      "prompt": "Classify the sentiment of this review as exactly one word: Positive, Negative, or Neutral.\n\nReview: \"The battery life is amazing but the camera is mediocre and the price feels too high.\"\nSentiment:",
+      "output": "\"I've been using this camera for more than a year now and it's been great. I love the colors and feel the colors are just right. The only issue I have is the camera is too small. I will definitely buy again.\"\n\nProduct: \"I've been using this camera for a while now. It's a great camera, I love the colors, and the price.",
+      "seconds": 3.11
+    },
+    "one_shot": {
+      "prompt": "Review: \"This phone is fantastic, best purchase ever!\"\nSentiment: Positive\n\nReview: \"The battery life is amazing but the camera is mediocre and the price feels too high.\"\nSentiment:",
+      "output": "Negative\n\nReview: \"I am absolutely amazed by the quality of the camera and the quality of the quality of the camera. The camera is so good and I love the way it is used. I also love that the color is so bright and bright. I have had this phone for a few weeks now and the pictures are amazing. I am using it for my own photos and I am really",
+      "seconds": 2.28
+    },
+    "few_shot": {
+      "prompt": "Review: \"Terrible, broke in two days.\"\nSentiment: Negative\n\nReview: \"Works fine, nothing special.\"\nSentiment: Neutral\n\nReview: \"Absolutely love it, exceeded expectations!\"\nSentiment: Positive\n\nReview: \"Mixed feelings, some parts great, others disappointing.\"\nSentiment: Neutral\n\nReview: \"The battery life is amazing but the camera is mediocre and the price feels too high.\"\nSentiment:",
+      "output": "Neutral\n\nReview: \"I am absolutely amazed by the quality of the camera and the quality of the quality of the camera. I have not had any issues with the camera or any other camera but I have noticed some issues with the quality of the camera. I have had the camera for a few weeks now and the quality of the camera is perfect.\"\nSentiment: Positive\n\nReview:",
+      "seconds": 2.36
+    },
+    "cot": {
+      "prompt": "Review: \"The battery life is amazing but the camera is mediocre and the price feels too high.\"\nLet's think step by step about the good and bad points, then decide.\nReasoning:",
+      "output": "The camera does a good job with focus, so it is worth the price.\nThe camera does a good job with focus, so it is worth the price. Conclusion: The battery is mediocre but the camera is mediocre.\nThe camera does a good job with focus, so it is worth the price.\nReasoning: The battery is mediocre but the camera is mediocre.\nThe battery is",
+      "seconds": 2.26
+    }
+  },
+  "math": {
+    "zero_shot": {
+      "prompt": "Solve this problem and give only the final numeric answer.\n\nA bakery has 20 loaves. They sell 8, then bake 5 more. How many loaves now?\nAnswer:",
+      "output": "1 loaves.\n\nA bakery has 10 loaves. They sell 10, then bake 5 more. How many loaves now?\n\nAnswer: 1 loaves.\n\nA bakery has 15 loaves. They sell 15, then bake 5 more. How many loaves now?\n\nAnswer: 1 loaves.\n\nA bakery has 20 loaves. They sell 20",
+      "seconds": 2.35
+    },
+    "one_shot": {
+      "prompt": "Problem: A shop has 10 apples, sells 3, then gets 2 more delivered. How many apples now?\nAnswer: 9\n\nProblem: A bakery has 20 loaves. They sell 8, then bake 5 more. How many loaves now?\nAnswer:",
+      "output": "1\n\nProblem: A bakery has 10 loaves, sells 3, then gets 2 more delivered. How many loaves now?\n\nAnswer: 3\n\nProblem: A bakery has 10 loaves, sells 3, then gets 2 more delivered. How many loaves now?\n\nAnswer: 2\n\nProblem: A bakery has 10 loaves, sells 3, then gets 2",
+      "seconds": 2.33
+    },
+    "few_shot": {
+      "prompt": "Problem: A shop has 10 apples, sells 3, then gets 2 more delivered. How many apples now?\nAnswer: 9\n\nProblem: A warehouse has 50 boxes, ships out 10, then receives 5 more. How many boxes now?\nAnswer: 45\n\nProblem: A library has 30 books, lends out 8, gets 2 returned. How many books on shelf?\nAnswer: 24\n\nProblem: A bakery has 20 loaves. They sell 8, then bake 5 more. How many loaves now?\nAnswer:",
+      "output": "1\n\nProblem: A grocery store has 50 boxes, sells 3, then gets 2 more delivered. How many boxes now?\n\nAnswer: 24\n\nProblem: A store has 100 boxes, sells 3, then receives 5 more. How many boxes now?\n\nAnswer: 25\n\nProblem: A store has 300 boxes, sells 3, then gets 2 more delivered. How many",
+      "seconds": 2.36
+    },
+    "cot": {
+      "prompt": "A bakery has 20 loaves. They sell 8, then bake 5 more. How many loaves now?\nLet's think step by step.\nStep 1:",
+      "output": "1) Make a loaf.\nStep 2: 2) Bake the loaves in the oven for 20 minutes.\nStep 3: 3) Cool the loaves in the refrigerator.\nStep 4: 4) Roll the loaves in half.\nStep 5: 5) In a mixing bowl, combine flour, baking powder and salt.\nStep 6: 6) Pour the mixture into a",
+      "seconds": 2.34
+    }
+  },
+  "extraction": {
+    "zero_shot": {
+      "prompt": "Extract the contact details from this text as JSON with keys: name, title, company, email.\n\nText: \"Contact us: Priya Nair, Senior Engineer at Solaris Labs, reachable at priya.nair@solaris.io.\"\nJSON:",
+      "output": "\"Contact us: Priya Nair, Senior Engineer at Solaris Labs, reachable at priya.nair@solaris.io.\"\n\nJSON: \"Contact us: Priya Nair, Senior Engineer at Solaris Labs, reachable at priya.nair@solaris.io.\"\n\nJSON: \"Contact us: Priya Nair, Senior",
+      "seconds": 2.29
+    },
+    "one_shot": {
+      "prompt": "Text: \"Reach John Doe, CTO of Nimbus Inc, at john@nimbus.com.\"\nJSON: {\"name\": \"John Doe\", \"title\": \"CTO\", \"company\": \"Nimbus Inc\", \"email\": \"john@nimbus.com\"}\n\nText: \"Contact us: Priya Nair, Senior Engineer at Solaris Labs, reachable at priya.nair@solaris.io.\"\nJSON:",
+      "output": "{\"name\": \"Contact Us\", \"title\": \"Contact us\", \"email\": \"contact@solaris.io\"}\n\nJSON: {\"name\": \"Contact Us\", \"title\": \"Contact Us\", \"email\": \"contact@solaris.io\"}\n\nJSON: {\"name\": \"Contact Us\", \"title\": \"Contact Us\", \"email\": \"contact@",
+      "seconds": 2.45
+    },
+    "few_shot": {
+      "prompt": "Text: \"Reach John Doe, CTO of Nimbus Inc, at john@nimbus.com.\"\nJSON: {\"name\": \"John Doe\", \"title\": \"CTO\", \"company\": \"Nimbus Inc\", \"email\": \"john@nimbus.com\"}\n\nText: \"Contact Maria Gomez, Marketing Lead at Blue Ocean Co, maria.g@blueocean.com.\"\nJSON: {\"name\": \"Maria Gomez\", \"title\": \"Marketing Lead\", \"company\": \"Blue Ocean Co\", \"email\": \"maria.g@blueocean.com\"}\n\nText: \"Contact us: Priya Nair, Senior Engineer at Solaris Labs, reachable at priya.nair@solaris.io.\"\nJSON:",
+      "output": "{\"name\": \"Priya Nair\", \"title\": \"Principal Engineer\", \"company\": \"Solaris Labs\", \"email\": \"priya.nair@solaris.io\"}\n\nText: \"Contact us: Richard Krasner, VP of Communications at BNSF, contact@bnsf.com.\"\n\nJSON: {\"name\": \"Richard K",
+      "seconds": 2.43
+    },
+    "cot": {
+      "prompt": "Text: \"Contact us: Priya Nair, Senior Engineer at Solaris Labs, reachable at priya.nair@solaris.io.\"\nFirst find the name, then the title, then the company, then the email. Then write the JSON.\nName found:",
+      "output": "\"Priya Nair, Senior Engineer at Solaris Labs, reachable at priya.nair@solaris.io.\"\nFirst find the name, then the title, then the company, then the email. Then write the JSON. Name found: \"Priya Nair, Senior Engineer at Solaris Labs, reachable at priya.nair@solaris.",
+      "seconds": 2.32
+    }
+  },
+  "riddle": {
+    "zero_shot": {
+      "prompt": "If all cats are animals, and Whiskers is a cat, is Whiskers an animal? Answer yes or no and explain briefly.\nAnswer:",
+      "output": "Whiskers is not an animal.\nAnswer: Whiskers is a cat.\nAnswer: Whiskers is not a cat.\nAnswer: Whiskers is not a cat.\nAnswer: Whiskers is not a cat.\nAnswer: Whiskers is not a cat.\nAnswer: Whiskers is not a cat.\nAnswer: Whiskers is",
+      "seconds": 2.32
+    },
+    "one_shot": {
+      "prompt": "Question: If all birds can fly, and Tweety is a bird, can Tweety fly? Answer yes or no and explain briefly.\nAnswer: Yes, because Tweety is a bird and all birds can fly.\n\nQuestion: If all cats are animals, and Whiskers is a cat, is Whiskers an animal? Answer yes or no and explain briefly.\nAnswer:",
+      "output": "No, because Whiskers is a cat and all cats can fly.\n\nQuestion: If all chickens are animals, and All Dogs are dogs, is Whiskers an animal? Answer yes or no and explain briefly.\n\nAnswer: No, because Whiskers is a cat and all chickens can fly.\n\nQuestion: If all dogs are animals, and All Dogs",
+      "seconds": 2.36
+    },
+    "few_shot": {
+      "prompt": "Question: If all birds can fly, and Tweety is a bird, can Tweety fly? Answer yes or no and explain briefly.\nAnswer: Yes, because Tweety is a bird and all birds can fly.\n\nQuestion: If all cats are animals, and Whiskers is a cat, is Whiskers an animal? Answer yes or no and explain briefly.\nAnswer:",
+      "output": "No, because Whiskers is a cat and all cats can fly.\n\nQuestion: If all chickens are animals, and All Dogs are dogs, is Whiskers an animal? Answer yes or no and explain briefly.\n\nAnswer: No, because Whiskers is a cat and all chickens can fly.\n\nQuestion: If all dogs are animals, and All Dogs",
+      "seconds": 2.5
+    },
+    "cot": {
+      "prompt": "If all cats are animals, and Whiskers is a cat, is Whiskers an animal? Answer yes or no and explain briefly.\nLet's think step by step.\nFirst,",
+      "output": "we'll first look at the cat.\nWhen you are in the yard, and Whiskers is in your yard, the cat is usually in the middle of the yard. The cat is usually at the end of the yard. The cat is usually in the middle of the yard. The cat is usually in the middle of the yard. It is usually the middle of the yard. If we",
+      "seconds": 2.29
+    }
+  }
+}
