@@ -1,15 +1,3 @@
-"""
-sae_vae_demo.py
-================
-Pretrained models: Sparse Autoencoder (SAE) and Variational Autoencoder (VAE).
-
-Install:
-    pip install torch sae-lens transformer-lens diffusers pillow torchvision
-
-Run:
-    python sae_vae_demo.py
-"""
-
 import warnings
 warnings.filterwarnings("ignore")
 
